@@ -1,0 +1,43 @@
+%df {
+  display: flex;
+}
+
+%jcc {
+  justify-content: center;
+}
+
+%aic {
+  align-items: center;
+}
+
+%fdc {
+  flex-direction: column;
+}
+
+%fww {
+  flex-wrap: wrap;
+}
+
+@mixin flexcenter {
+  @extend %df;
+  @extend %jcc;
+  @extend %aic;
+}
+
+@mixin flexcolumn {
+  @extend %df;
+  @extend %fdc;
+}
+
+@mixin containerShadow {
+  @include flexcenter;
+
+  width: 5rem;
+  height: 5rem;
+  padding: 1.5rem;
+  border-radius: 100%;
+  background: $neutralDarkBlue;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}

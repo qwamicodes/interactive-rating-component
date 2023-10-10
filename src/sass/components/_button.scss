@@ -1,0 +1,25 @@
+.btn {
+  border-radius: 5rem;
+  padding: 1.5rem 0;
+  width: 100%;
+
+  transition: $transition-fastest;
+
+  &-container {
+    @include flexcenter;
+  }
+
+  &-submit {
+    background: $primaryOrange;
+    color: $neutralWhite;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+
+    &:hover {
+      color: $primaryOrange;
+      background: $neutralWhite;
+    }
+  }
+}

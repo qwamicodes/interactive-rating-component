@@ -1,0 +1,16 @@
+.ratings {
+  place-items: center;
+
+  &__item {
+    cursor: pointer;
+    @include containerShadow;
+
+    transition: $transition-fastest;
+
+    &:hover {
+      //   transform: translateY(-0.5rem) scale(1.1);
+      //   background: lighten($neutralDarkBlue, 5%);
+      background: $primaryOrange;
+    }
+  }
+}

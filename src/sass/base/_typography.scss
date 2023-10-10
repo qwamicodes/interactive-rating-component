@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+.heading {
+  &-primary {
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+
+  &-secondary {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: $neutralLightGrey;
+  }
+}

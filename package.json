@@ -4,7 +4,7 @@
   "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "sass:write": "node-sass ./src/sass/main.scss ./src/css/styles.css"
+    "sass:write": "node-sass ./src/sass/main.scss ./src/css/styles.css -w"
   },
   "repository": {
     "type": "git",

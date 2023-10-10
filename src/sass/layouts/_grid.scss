@@ -1,0 +1,72 @@
+.container {
+  width: 40rem;
+  background: $neutralDarkBlue;
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.col {
+  &-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.row {
+  &-1 {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  &-2 {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  &-3 {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  &-4 {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  &-5 {
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+.horizontal__gap--1 {
+  @extend %df;
+  gap: 1rem;
+}
+.horizontal__gap--2 {
+  @extend %df;
+  gap: 2rem;
+}
+.horizontal__gap--3 {
+  @extend %df;
+  gap: 3rem;
+}
+
+.vertical__gap--1 {
+  @include flexcolumn;
+  gap: 1rem;
+}
+.vertical__gap--2 {
+  @include flexcolumn;
+  gap: 2rem;
+}
+.vertical__gap--3 {
+  @include flexcolumn;
+  gap: 3rem;
+}
